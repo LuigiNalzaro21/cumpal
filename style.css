@@ -1,0 +1,242 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background: rgb(31, 60, 61);
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    margin: 0; 
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+    padding: 30px;
+    padding-right: 3%;
+    background-color: rgb(31, 60, 61);
+    box-sizing: border-box;
+    font-size: 30px;
+    box-shadow: 0 10px 1000px rgb(0, 0, 0);
+}
+
+.header li {
+    text-align: center;
+    margin: 0;
+    margin-right: 30px; 
+}
+
+.header li a {
+    text-decoration: none;
+    color: white;
+    margin-right: 40px;
+    position: relative;
+    transition: color 0.3s;
+    display: inline-block;
+}
+
+.header li a i {
+    position: relative;
+    z-index: 1;
+    color: white; 
+    transition: transform 0.3s ease-in-out; 
+}
+
+.header li a:hover i {
+    color: #EEC56A;
+    transform: translateY(-10px); 
+}
+
+.header li a:after {
+    content: attr(data-text); 
+    position: absolute;
+    top: 100%; 
+    left: 55%; 
+    transform: translateX(-50%);
+    padding: 1px;
+    color: white;
+    font-size: 14px;
+    white-space: nowrap;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.header li a:hover:after {
+    opacity: 1;
+}
+
+.typewriter {
+    position: absolute;
+    left: 185px; 
+    top: 50%; 
+    transform: translateY(-50%); 
+}
+
+.typewriter h1 {
+    font-size: 40px;
+    overflow: hidden; 
+    padding: 1px;
+    border-right: .15em solid rgb(65, 125, 128); 
+    white-space: nowrap; 
+    margin: 0 auto;
+    letter-spacing: .15em; 
+    animation: 
+      typing 3.5s steps(40, end),
+      blink-caret .75s step-end infinite;
+}
+
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+}
+
+@keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: #EEC56A; }
+}
+
+.fs-4{
+    margin-top: -5%;
+}
+
+.text-center{
+    text-align: left;
+    margin-left: 10%;
+    padding-right: 50%;
+}
+
+@media only screen and (max-width: 768px) {
+    .header {
+        padding: 15px;
+        font-size: 20px;
+    }
+
+    .header li a {
+        margin-left: 20px;
+    }
+
+    .header li a i {
+        font-size: 18px;
+    }
+
+    .typewriter h1 {
+        font-size: 30px;
+    }
+}
+
+.social-links {
+    display: block;
+    margin-top: 70px;
+}
+
+.social-link {
+    color: white;
+    font-size: 40px;
+    margin-right: 40px;
+    text-decoration: none;
+    position: relative; 
+}
+
+.social-link:hover {
+    color: #EEC56A;
+}
+
+.social-link:after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    width: 0;
+    border-radius: 5px;
+    height: 5px;
+    background-color: #EEC56A;
+    transition: width 0.3s ease-out, left 0.3s ease-out;
+    transform: translateX(-15%);
+}
+
+.social-link:hover:after {
+    width: 150%;
+    left: 0; 
+}
+
+
+.img1 {
+    width: 500px;
+    height: 500px;
+    border-radius: 42% 58% 27% 73% / 67% 26% 74% 3%;
+    position: absolute;
+    top: 25%;
+    left: 60%;
+    z-index: -1;
+    transition: transform 0.3s, box-shadow 0.3s; 
+    animation: blobbing 6s infinite ease-in-out;
+}
+
+@keyframes wobble {
+    0% {
+        border-radius: 85% 43% 44% 81% / 41% 39% 82% 74%;
+    }
+    25% {
+        border-radius: 70% 45% 40% 85% / 55% 44% 55% 67%;
+    }
+    50% {
+        border-radius: 90% 40% 55% 70% / 59% 58% 42% 41%;
+    }
+    75% {
+        border-radius: 60% 50% 35% 75% / 60% 65% 45% 60%;
+    }
+    100% {
+        border-radius: 85% 43% 44% 81% / 41% 39% 82% 74%;
+    }
+}
+
+.blob {
+    width: 550px;
+    height: 550px;
+    background-color: rgba(65, 125, 128, 0.5);
+    position: absolute;
+    top: 23.5%;
+    left: 58.5%;
+    z-index: -1;
+    border-radius: 42% 58% 27% 73% / 67% 26% 74% 3%;
+    animation: blobbing 6s infinite ease-in-out;
+    box-shadow: 0 10px 100px rgb(0, 0, 0);
+}
+
+@keyframes blobbing {
+    0% {
+        border-radius: 85% 43% 44% 81% / 41% 39% 82% 74%;
+    }
+    25% {
+        border-radius: 70% 45% 40% 85% / 55% 44% 55% 67%;
+    }
+    50% {
+        border-radius: 90% 40% 55% 70% / 59% 58% 42% 41%;
+    }
+    75% {
+        border-radius: 60% 50% 35% 75% / 60% 65% 45% 60%;
+    }
+    100% {
+        border-radius: 85% 43% 44% 81% / 41% 39% 82% 74%;
+    }
+}
+
+.footer {
+    background-color: rgb(31, 60, 61);
+    color: white;
+    text-align: center;
+    padding: 20px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    box-shadow: 0 10px 1000px rgb(0, 0, 0);
+}

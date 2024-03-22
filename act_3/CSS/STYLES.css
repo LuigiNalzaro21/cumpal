@@ -1,0 +1,379 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {  
+    background-color: rgb(31, 60, 61);
+    font-size: larger;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+
+.upTitle{
+    margin-top: 200px;
+    margin-left: -30%;
+}
+
+.upPara{
+    margin-top: 1%;
+    margin-left: -30%;
+}
+
+.upImage{
+    border-radius: 10px;
+    width: 50%;
+    height: 50%;
+    margin-top: -6.5%;
+    margin-left: 100px;
+}
+
+.upImage:hover{
+    box-shadow: -20px 24px 28px rgb(0, 0, 0);
+    transform: scale(1.05); 
+    transition: transform 0.5s ease; 
+    z-index: -1;
+}
+
+.upButton {
+    border-radius: 5px;
+    position: absolute;
+    margin-top: 1%;
+    margin-left: -53.3%;
+    padding: 10px; 
+    background-color: rgb(25, 47, 48);
+    border: none;
+    color: white; 
+    font-size: 16px;
+    cursor: pointer;
+    z-index: inherit;
+    position: var(-50% );
+}
+
+.upButton:hover{
+    cursor: pointer;
+    color: black;
+    background-color: #EEC56A;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.8);
+}
+
+.upClass {
+    margin-top: -4%;
+    margin-left: 40%;
+}
+
+.title {
+    position: absolute; 
+    top: 0; 
+    left: 12%; 
+}
+
+.profOne {
+    float: right;
+    margin-left: 20px;
+}
+
+.dwnProf {
+    border: none;
+}
+
+.dwnClass {
+    margin-top: 5%;
+    margin-bottom: -1%;
+    padding: 5px;
+    margin-left: 10%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; 
+    position: relative;
+}
+
+h1{
+    margin-left: 22%;
+    margin-top: -3%;
+}
+
+.image-container1,
+.image-container2,
+.image-container3 {
+    width: calc(33.33% - 20px); 
+    padding: 10px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.8);
+    border-radius: 10px;
+    margin: 1%;
+    height: 80%;
+}
+
+.container{
+    display: flex;
+    margin-right: 10%;
+    margin-bottom: -50%;
+    z-index: -1;
+}
+
+.sectionTwo {
+    display: flex;
+}
+
+.button1 {
+    border-radius: 5px;
+    background-color: rgb(25, 47, 48);
+    border: none; 
+    color: white; 
+    padding: 10px 20px; 
+    text-align: center; 
+    text-decoration: none; 
+    display: inline-block; 
+    font-size: 16px; 
+    margin: 4px 2px; 
+    margin-top: 5.5%;
+    margin-left: 3%;
+    cursor: pointer; 
+}
+
+
+.button1:hover {
+    cursor: pointer;
+    color: black;
+    background-color: #EEC56A;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.8); 
+}
+
+
+.button2 {
+    border-radius: 5px;
+    background-color: rgb(25, 47, 48);
+    border: none; 
+    color: white; 
+    padding: 10px 20px; 
+    text-align: center; 
+    text-decoration: none; 
+    display: inline-block; 
+    font-size: 16px; 
+    margin: 4px 2px;
+    margin-top: 10.5%;
+    margin-left: 3%;
+    cursor: pointer; 
+}
+
+.button2:hover {
+    cursor: pointer;
+    color: black;
+    background-color: #EEC56A;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.8); 
+}
+
+.button3 {
+    border-radius: 5px;
+    background-color: rgb(25, 47, 48);
+    border: none; 
+    color: white; 
+    padding: 10px 20px; 
+    text-align: center; 
+    text-decoration: none; 
+    display: inline-block;
+    font-size: 16px; 
+    margin: 4px 2px;
+    margin-top: 1%;
+    margin-left: 3%; 
+    cursor: pointer; 
+}
+
+.button3:hover {
+    cursor: pointer;
+    color: black;
+    background-color: #EEC56A;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.8); 
+}
+
+.img1{
+    border-radius: 10px;
+    margin-left: 2.5%;
+    margin-top: 2%;
+    height: 60%;
+    width: 95%;
+}
+
+.img1:hover{
+    transform: scale(1.05); 
+    transition: transform 0.5s ease;
+}
+
+.img2:hover{
+    transform: scale(1.05); 
+    transition: transform 0.5s ease;
+}
+
+.img3:hover{
+    transform: scale(1.05); 
+    transition: transform 0.5s ease;
+}
+
+.img2{
+    border-radius: 10px;
+    margin-left: 2.5%;
+    margin-top: 2%;
+    height: 60%;
+    width: 95%;
+}
+
+.img3{
+    border-radius: 10px;
+    margin-left: 2.5%;
+    margin-top: 2%;
+    width: 95%;
+    height: 60%;
+}
+
+.para1{
+    margin-top: 3%;
+    margin-left: 3%;
+    margin-bottom: 10px;
+    text-align: justify;
+    padding-right: 3%;
+}
+
+.para2{
+    margin-top: 3%;
+    margin-left: 3%;
+    margin-bottom: 10px;
+    text-align: justify;
+    padding-right: 3%;
+}
+
+.para3{
+    margin-top: 3%;
+    margin-left: 3%;
+    margin-bottom: 10px;
+    text-align: justify;
+    padding-right: 3%;
+}
+
+.header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+    padding: 30px;
+    padding-right: 3%;
+    background-color: rgb(31, 60, 61);
+    box-sizing: border-box;
+    font-size: 30px;
+    box-shadow: 0 10px 1000px rgb(0, 0, 0);
+}
+
+.header li {
+    text-align: center;
+    margin: 0;
+    margin-right: 30px; 
+}
+
+.header li a {
+    text-decoration: none;
+    color: white;
+    margin-right: 40px;
+    position: relative;
+    transition: color 0.3s;
+    display: inline-block;
+}
+
+.header li a i {
+    position: relative;
+    z-index: 1;
+    color: white; 
+    transition: transform 0.3s ease-in-out; 
+}
+
+.header li a:hover i {
+    color: #EEC56A;
+    transform: translateY(-10px); 
+}
+
+.header li a:after {
+    content: attr(data-text); 
+    position: absolute;
+    top: 100%; 
+    left: 55%; 
+    transform: translateX(-50%);
+    padding: 1px;
+    color: white;
+    font-size: 14px;
+    white-space: nowrap;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.header li a:hover:after {
+    opacity: 1;
+}
+
+.typewriter {
+    position: absolute;
+    left: 185px; 
+    top: 50%; 
+    transform: translateY(-50%); 
+}
+
+.typewriter h1 {
+    color: white;
+    font-size: 40px;
+    overflow: hidden; 
+    padding: 1px;
+    border-right: .15em solid rgb(65, 125, 128); 
+    white-space: nowrap; 
+    margin: 0 auto;
+    letter-spacing: .15em; 
+    animation: 
+      typing 3.5s steps(40, end),
+      blink-caret .75s step-end infinite;
+}
+
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+}
+
+@keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: #EEC56A; }
+}
+
+.footer {
+    background-color: rgb(31, 60, 61);
+    color: white;
+    text-align: center;
+    padding: 20px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    box-shadow: 0 10px 1000px rgb(0, 0, 0);
+    font-size: 20px;
+}
+
+@media only screen and (max-width: 768px) {
+    .header {
+        padding: 15px;
+        font-size: 20px;
+    }
+
+    .header li a {
+        margin-left: 20px;
+    }
+
+    .header li a i {
+        font-size: 18px;
+    }
+
+    .typewriter h1 {
+        font-size: 30px;
+    }
+}
+
+.title{
+    z-index: -1;
+}
