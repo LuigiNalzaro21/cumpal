@@ -213,21 +213,32 @@ body {
 }
 
 @media only screen and (max-width: 768px) {
+    body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
     .header {
         position: fixed;
         top: 0;
         width: 100%;
-        z-index: 999; 
+        z-index: -1; 
     }
 
-    .header li{
-        margin-right: 5px;
+    .header li {
+        margin: 0;
+        margin-right: 30px;
     }
 
     .header li a{
-        margin-right: 25px;
-        font-size: 30px;
-        right: 75px;
+        text-decoration: none;
+        color: white;
+        margin-right: 1px;
+        position: relative;
+        transition: color 0.3s;
+        display: inline-block;
     }
 
     .typewriter h1{
@@ -240,6 +251,8 @@ body {
         margin-bottom: 15%;
         font-size: 36px;
         padding: 13px;
+        text-align: center;
+        transform: translateX(8%);
     }
 
     .fw-bold{
@@ -247,7 +260,7 @@ body {
         margin-top: 20%;
         margin-bottom: 5%;
         font-size: 50px;
-        margin-left: -1%;
+        transform: translateX(8%);
     }
 
     .paras{
@@ -256,6 +269,7 @@ body {
         margin-top: 10%;
         margin-bottom: -5%;
         padding-right: 4%;
+        transform: translateX(8%);
     }
 
     .text-center {
@@ -268,28 +282,33 @@ body {
 
     .social-link{
         font-size: 30px;
-        left: -19%;
+        left: -11%;
     }
 
     .img1 {
         width: 400px;
         height: 400px;
-        top: 23.5%;
-        left: 17%;
-    }
+        top: 13.5%;
+        left: 50%; /* Set left position to 50% */
+        transform: translateX(-50%); /* Use transform to move the element back by half of its own width */
+    }    
 
     .blob {
         width: 450px;
         height: 450px;
-        top: 21%;
-        left: 13%;
-    }
+        top: 12%;
+        left: 50%; /* Set left position to 50% */
+        transform: translateX(-50%); /* Use transform to move the element back by half of its own width */
+    }    
 
     .footer {
         font-size: 16px;
         text-align: center;
-        left: -9%;
-        position: fixed;
+        left: 0; 
         width: 100%;
+        position: fixed;
+        bottom: 0;
+        box-shadow: 0 10px 1000px rgb(0, 0, 0);
     }
+    
 }
