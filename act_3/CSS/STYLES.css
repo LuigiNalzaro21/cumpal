@@ -355,6 +355,11 @@ h1{
     font-size: 20px;
 }
 
+.container:hover {
+    transform: scale(1.05); 
+    transition: transform 0.5s ease;
+}
+
 @media only screen and (max-width: 720px) and (max-height: 1640px) {
     body {
         display: flex;
@@ -413,7 +418,7 @@ h1{
         width: 130%;
         margin-right: 100%;
         margin-top: -100%;
-        margin-bottom: 30%;
+        margin-bottom: 40%;
     }
 
     .upTitle{
@@ -424,6 +429,11 @@ h1{
     .upPara{
         transform: translateX(-14%);
         font-size: 18px;
+    }
+
+    .upButton{
+        margin-right: 43%;
+        transform: translateY(1080%);
     }
 
     h1{
@@ -439,6 +449,11 @@ h1{
         gap: 40px;
         margin-bottom: 30%;
         margin-top: 20%;
+        pointer-events: none; 
+    }
+
+    .container * {
+        pointer-events: auto;
     }
 
     .button1{
@@ -453,6 +468,21 @@ h1{
         margin-top: 5%;
     }
 
+    /* Add hover effect to container elements */
+    .container:hover {
+        transform: scale(1.05); 
+        transition: transform 0.5s ease;
+    }
+
+    .button1:hover,
+    .button2:hover,
+    .button3:hover{
+        cursor: pointer;
+        color: black;
+        background-color: #EEC56A;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.8); 
+    }
+
     .image-container1,
     .image-container2,
     .image-container3 {
@@ -463,6 +493,29 @@ h1{
         border-radius: 10px; /* Keep border-radius */
         margin: 5px auto; /* Center align and add margin between cards */
     }
+
+    /* Add overlay for hover effect */
+.image-container1:hover::after,
+.image-container2:hover::after,
+.image-container3:hover::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    z-index: 1;
+}
+
+/* Apply hover effect to container elements */
+.image-container1:hover,
+.image-container2:hover,
+.image-container3:hover {
+    transform: scale(1.05); 
+    transition: transform 0.5s ease;
+}
+
 
     .para1,
     .para2,
