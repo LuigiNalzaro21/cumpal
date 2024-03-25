@@ -7,10 +7,12 @@ const upProf = (title, para, butClick, imgProf) => {
     Upper.className = "upClass";
     
     // Setting the inner HTML of the div to contain a title, paragraph, image, and button
-    Upper.innerHTML = `<h1 class="upTitle">${title}</h1>
+    Upper.innerHTML = `<div class="con">
+                        <h1 class="upTitle">${title}</h1>
                         <p class="upPara">${para}</p>
                         <img class="upImage" src="./image/${imgProf}">
-                        <button class="upButton">${butClick}</button>`;
+                        <button class="upButton">${butClick}</button>
+                        </con>`;
     
     // Returning the created div element
     return Upper;

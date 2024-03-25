@@ -181,21 +181,102 @@ button:hover {
     font-size: 20px;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 720px) and (max-height: 1640px) {
+    body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: initial; /* Remove extra background color */
+    }
+
     .header {
-        padding: 15px;
+        position: fixed;
+        height: 50px;
+        top: 0;
+        width: 100%;
+        z-index: 1000; 
+    }
+
+    .header li {
+        margin-right: 10px;
+    }
+
+    .header li a{
+        margin-left: -2px;
+        text-decoration: none;
+        color: white;
+        margin-right: -5px;
+        position: relative;
+        transition: color 0.3s;
+        display: inline-block;
         font-size: 20px;
+        top: -22px;
+        padding-right: 15px;
     }
 
-    .header li a {
-        margin-left: 20px;
+    .header li a:after{
+        font-size: 12px;
+        left: 35%;
     }
 
-    .header li a i {
-        font-size: 18px;
+    .typewriter{
+        position: absolute;
+        left: 20px;
+        transform: translateY(-50%);
     }
 
-    .typewriter h1 {
-        font-size: 30px;
+    .typewriter h1{
+        font-size: 20px;
+    }   
+
+    .container {
+        width: 80%; 
+        margin-left: auto; 
+        margin-right: auto; 
+        display: block;
+    }
+
+
+    img {
+        border-radius: 10px;
+        height: auto; /* Maintain aspect ratio */
+        max-width: 98%; 
+        box-shadow: 0px 10px 10px black;
+        margin-top: 1%; /* Adjust margin to position the image on top */
+        z-index: 1000;
+        margin-bottom: 5%; 
+        margin-left: -0.5%;
+    }
+
+
+    h1 {
+        font-size: 40px;
+        margin-bottom: 5%; /* Add margin bottom to create space below the h1 */
+        background-color: transparent;
+    }
+
+    .para {
+        font-size: 19px; 
+        margin-right: 3%;
+        margin-left: -1%;
+        margin-bottom: 10%; 
+        background-color: transparent;
+    }
+
+    button {
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+
+    .footer {
+        margin-top: 0;
+        text-align: center;
+        left: -5%; 
+        width: 100%;
+        position: fixed;
+        bottom: 0;
+        box-shadow: 0 10px 100px rgb(0, 0, 0);
+        font-size: 15px;
     }
 }

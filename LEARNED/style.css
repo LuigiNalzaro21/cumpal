@@ -122,25 +122,6 @@ body{
     box-shadow: 0 10px 1000px rgb(0, 0, 0);
 }
 
-@media only screen and (max-width: 768px) {
-    .header {
-        padding: 15px;
-        font-size: 20px;
-    }
-
-    .header li a {
-        margin-left: 20px;
-    }
-
-    .header li a i {
-        font-size: 18px;
-    }
-
-    .typewriter h1 {
-        font-size: 30px;
-    }
-}
-
 .paragraph-container {
     display: flex;
     justify-content: space-around;
@@ -166,3 +147,99 @@ body{
     font-size: 18px;
 }
 
+@media only screen and (max-width: 720px) and (max-height: 1640px) {
+    body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .header {
+        position: fixed;
+        height: 50px;
+        top: 0;
+        width: 100%;
+        z-index: 1000;
+        box-shadow: 0 10px 40px rgb(0, 0, 0); 
+    }
+
+    .header1{
+        margin-top: 28%;
+        margin-bottom: 8%;
+    }
+
+    .header li {
+        margin-right: 10px;
+    }
+
+    .header li a{
+        margin-left: -2px;
+        text-decoration: none;
+        color: white;
+        margin-right: -5px;
+        position: relative;
+        transition: color 0.3s;
+        display: inline-block;
+        font-size: 20px;
+        top: -22px;
+        padding-right: 15px;
+    }
+
+    .header li a:after{
+        font-size: 12px;
+        left: 35%;
+    }
+
+    .typewriter{
+        position: absolute;
+        left: 20px;
+        transform: translateY(-50%);
+    }
+
+    .typewriter h1{
+        font-size: 20px;
+    }   
+
+    .paragraph-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        margin-top: 20px;
+        margin-bottom: 20%;
+        gap: 30px;
+    }
+    
+    .paragraph {
+        width: 100%;
+        padding: 40px;
+        font-size: 15px;
+        background-color: rgb(31, 60, 61);
+        box-shadow: 0 10px 40px rgb(0, 0, 0);
+        border-radius: 10px;
+        margin: 10px;
+    }
+    
+    .paragraph b {
+        font-size: 20px;
+        text-align: center;
+    }
+    
+    .paragraph p {
+        margin-top: 10px;
+        text-align: left;
+    }
+    
+
+    .footer {
+        margin-top: 0;
+        text-align: center;
+        left: -5%; 
+        width: 100%;
+        position: fixed;
+        bottom: 0;
+        box-shadow: 0 10px 100px rgb(0, 0, 0);
+        font-size: 15px;
+    }
+}

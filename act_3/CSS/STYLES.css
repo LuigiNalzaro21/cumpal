@@ -355,25 +355,129 @@ h1{
     font-size: 20px;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 720px) and (max-height: 1640px) {
+    body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
     .header {
-        padding: 15px;
+        position: fixed;
+        height: 50px;
+        top: 0;
+        width: 100%;
+        z-index: 1000; 
+    }
+
+    .header li {
+        margin-right: 10px;
+    }
+
+    .header li a{
+        margin-left: -2px;
+        text-decoration: none;
+        color: white;
+        margin-right: -5px;
+        position: relative;
+        transition: color 0.3s;
+        display: inline-block;
         font-size: 20px;
+        top: -22px;
+        padding-right: 15px;
     }
 
-    .header li a {
-        margin-left: 20px;
+    .header li a:after{
+        font-size: 12px;
+        left: 35%;
     }
 
-    .header li a i {
+    .typewriter{
+        position: absolute;
+        left: 15%;
+        transform: translateY(-50%);
+    }
+
+    .typewriter h1{
+        font-size: 20px;
+    }   
+
+    .con{
+        display: flex;
+        flex-direction: column; /* Arrange items vertically */
+        align-items: center;
+    }
+
+    .upImage{
+        width: 130%;
+        margin-right: 100%;
+        margin-top: -100%;
+        margin-bottom: 30%;
+    }
+
+    .upTitle{
+        margin-top: 120%;
+        transform: translateX(-125%);
+    }
+
+    .upPara{
+        transform: translateX(-14%);
         font-size: 18px;
     }
 
-    .typewriter h1 {
-        font-size: 30px;
+    h1{
+        margin-top: 10%;
+        font-size: 25px;
+        transform: translateX(-32%);
     }
-}
 
-.title{
-    z-index: -1;
+    .container {
+        display: flex;
+        flex-direction: column; /* Arrange items vertically */
+        align-items: center; /* Center align items */
+        gap: 40px;
+        margin-bottom: 30%;
+        margin-top: 20%;
+    }
+
+    .button1{
+        margin-top: 15%;
+    }
+
+    .button2{
+        margin-top: 15%;
+    }
+
+    .button3{
+        margin-top: 5%;
+    }
+
+    .image-container1,
+    .image-container2,
+    .image-container3 {
+        width: 90%; /* Adjust width for better fit */
+        padding: 10px; /* Add padding for spacing within cards */
+        padding-bottom: 30%;
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.8); /* Keep box-shadow */
+        border-radius: 10px; /* Keep border-radius */
+        margin: 5px auto; /* Center align and add margin between cards */
+    }
+
+    .para1,
+    .para2,
+    .para3{
+        font-size: 17px;
+    }
+
+    .footer {
+        margin-top: 0;
+        text-align: center;
+        width: 100%;
+        position: fixed;
+        bottom: 0;
+        box-shadow: 0 10px 100px rgb(0, 0, 0);
+        font-size: 15px;
+    }
+    
 }
